@@ -1,0 +1,148 @@
+@media (max-width: 992px) and (min-width: 577px) {
+  .container-h {
+    justify-content: space-evenly;
+  }
+
+  .container-menu {
+    display: block;
+    font-size: 24px;
+  }
+
+  .bodyContent {
+    padding: 0 24px;
+  }
+
+  .typeFilm {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: none;
+  }
+  .container-section:first-child {
+    border-right: none;
+  }
+
+  .container-section {
+    width: 100%;
+    text-align: left;
+    /* padding-left: 48px; */
+  }
+
+  .container-section span {
+    display: inline-block;
+    width: 100%;
+    padding-left: 24px;
+  }
+
+  .container-section div {
+    position: relative;
+  }
+
+  .genres ul {
+    /* margin: 0 -24px; */
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--super);
+  }
+
+  .genres .genre {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  .upCommingFilm .film {
+    width: 31%;
+  }
+
+  .film-type .film {
+    width: 31%;
+  }
+
+  .titleFilm {
+    font-size: 16px;
+  }
+
+  footer {
+    padding-top: 36px;
+    background: #161e25 url(../assets/footer-bg.png) no-repeat bottom right;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+  }
+
+  div.footer-top-item {
+    width: 100%;
+  }
+
+  ul.footer-top-item {
+    width: 50%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-bottom-left {
+    margin: 18px 0 8px;
+  }
+
+  .footer-bottom-right {
+    margin-bottom: 18px;
+  }
+
+  .topicFilm-intro .img {
+    width: 50%;
+  }
+
+  .border-filmDetail {
+    flex-direction: column;
+  }
+
+  .filmDetail {
+    width: 100%;
+  }
+
+  .filmSimilar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 48px;
+  }
+
+  .filmSimilar h2 {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+  }
+
+  .filmRecomment {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .filmRecomment img {
+    width: 100%;
+  }
+
+  .filmRecomment span {
+    font-size: 20px;
+    padding: 4px 0;
+    margin-bottom: 12px;
+  }
+
+  .border-watchFilm iframe {
+    height: 500px;
+  }
+}

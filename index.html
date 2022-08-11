@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>movieChill</title>
+    <!-- swiper slide -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Demo styles -->
+    <style>
+      /* .border-swiper {
+        margin: 18px 36px;
+      } */
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+
+    <!-- bootstrap
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="./css/pagination.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-h search--logo">
+        <div class="container-logo">
+          <img src="./assets/logo.png" alt="" />
+        </div>
+        <div class="container-searchForm">
+          <input
+            type="text"
+            name=""
+            id="inputSearch"
+            placeholder="Tìm kiếm..."
+            value=""
+          />
+          <i class="fa-solid fa-magnifying-glass icon-search"></i>
+          <div class="resultSearch"></div>
+          <div class="container-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container-h typeFilm">
+        <div class="container-section">
+          <span>
+            <a href="#">Trang chủ</a>
+          </span>
+        </div>
+        <div class="container-section genres">
+          <div>Thể loại <i class="fa-solid fa-caret-down"></i></div>
+        </div>
+        <div class="container-section up-coming">
+          <span>
+            <a href="./listFilms.html?type=upComing">Sắp Chiếu</a>
+          </span>
+        </div>
+        <div class="container-section top-rate">
+          <span>
+            <a href="./listFilms.html?type=topRate">Phim hay</a>
+          </span>
+        </div>
+        <div class="container-section popular">
+          <span>
+            <a href="./listFilms.html?type=popular">Phổ biến</a>
+          </span>
+        </div>
+        <div class="container-section now-playing">
+          <span>
+            <a href="./listFilms.html?type=nowPlaying">Chiếu rạp</a>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <div class="bodyContent">
+      <div class="border-recentlyFilm">
+        <div class="swiper mySwiper">
+          <div class="recentlyFilm filmList swiper-wrapper"></div>
+          <div class="swiper-button-next btn-next"></div>
+          <div class="swiper-button-prev btn-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+      <div class="border-upComingFilm">
+        <h2>Phim sắp chiếu</h2>
+        <div class="upCommingFilm"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-item">
+          <img src="./assets/logo.png" alt="" />
+          <span
+            >Chúng tôi đã quay lại với sứ mệnh mới. Hãy truy cập ngay bằng tên
+            miền mới movieChill</span
+          >
+        </div>
+        <ul class="footer-top-item">
+          <li>Movie Chill</li>
+          <li>Mot Chill</li>
+          <li>Bi Chill</li>
+          <li>Phim Gi</li>
+          <li>Xem Chill</li>
+          <li>TV Hay</li>
+          <li>Phim Moi</li>
+        </ul>
+        <ul class="footer-top-item">
+          <li>VungTV</li>
+          <li>iPhimHay</li>
+          <li>KhoaiTV</li>
+          <li>Vkool</li>
+          <li>MePhimMoi</li>
+          <li>XemPhimChill</li>
+          <li>AnimeLau</li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>Copyright 2022 @ movieChill</span>
+          <span>Phim mới</span>
+        </div>
+        <div class="footer-bottom-right">
+          <span>Phim hay</span>
+          <span>Phim HD Vietsub</span>
+          <span>Xem phim online</span>
+          <span>Xem phim nhanh</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js key fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/127425766f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/renderUI.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
